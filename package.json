@@ -1,33 +1,45 @@
 {
-	"name": "the-timekeeper",
-	"version": "1.0.0",
-	"description": "",
-	"main": "app.js",
-	"scripts": {
-		"start": "node server/app.js",
-		"build": "npm install && cd client && npm install && npm run build",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Sarthak1799/The-TimeKeeper/issues"
-	},
-	"homepage": "https://github.com/Sarthak1799/The-TimeKeeper#readme",
+	"name": "timekeeper-frontend",
+	"proxy": "",
+	"version": "0.1.0",
+	"private": true,
 	"dependencies": {
-		"bcrypt": "^5.0.1",
-		"cors": "^2.8.5",
-		"dotenv": "^10.0.0",
-		"express": "^4.17.1",
-		"express-async-errors": "^3.1.1",
-		"jsonwebtoken": "^8.5.1",
+		"@material-ui/core": "^4.11.4",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/lab": "*",
+		"@testing-library/jest-dom": "^5.12.0",
+		"@testing-library/react": "^11.2.7",
+		"@testing-library/user-event": "^12.8.3",
+		"axios": "^0.21.1",
 		"luxon": "^1.27.0",
-		"mongoose": "^5.12.12",
-		"mongoose-unique-validator": "^2.0.3"
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-router-dom": "^5.2.0",
+		"react-scripts": "4.0.3",
+		"web-vitals": "^1.1.2"
 	},
-	"devDependencies": {
-		"eslint": "^7.27.0",
-		"nodemon": "^2.0.7"
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	}
 }
